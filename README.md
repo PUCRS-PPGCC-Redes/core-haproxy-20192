@@ -26,7 +26,7 @@
 
 * **haproxy.sh** Bash script to call haproxy with options.
 
-* **__init__.py** Init python module for Core users' modules.
+* **__init__.py** Init python module to call Core users' modules (haproxy.py and rsyslogd.py).
 
 * **README.md** This file!
 
