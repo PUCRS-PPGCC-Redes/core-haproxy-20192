@@ -1,0 +1,194 @@
+node n1 {
+    type router
+    model host
+    network-config {
+	hostname n1
+	!
+	interface eth0
+	 ip address 10.0.0.10/24
+	 ipv6 address 2001:0::10/64
+	!
+    }
+    canvas c1
+    iconcoords {121.0 120.0}
+    labelcoords {121.0 152.0}
+    interface-peer {eth0 n3}
+}
+
+node n2 {
+    type router
+    model host
+    network-config {
+	hostname n2
+	!
+	interface eth0
+	 ip address 10.0.0.11/24
+	 ipv6 address 2001:0::11/64
+	!
+    }
+    canvas c1
+    iconcoords {120.0 457.0}
+    labelcoords {120.0 489.0}
+    interface-peer {eth0 n3}
+}
+
+node n3 {
+    type lanswitch
+    network-config {
+	hostname n3
+	!
+    }
+    canvas c1
+    iconcoords {299.0 292.0}
+    labelcoords {299.0 316.0}
+    interface-peer {e0 n1}
+    interface-peer {e1 n2}
+    interface-peer {e2 n4}
+}
+
+node n4 {
+    type router
+    model Haproxy
+    network-config {
+	hostname n4
+	!
+	interface eth1
+	 ip address 10.0.1.1/24
+	 ipv6 address 2001:1::1/64
+	!
+	interface eth0
+	 ip address 10.0.0.1/24
+	 ipv6 address 2001:0::1/64
+	!
+    }
+    canvas c1
+    iconcoords {525.0 292.0}
+    labelcoords {525.0 324.0}
+    interface-peer {eth0 n3}
+    interface-peer {eth1 n5}
+}
+
+node n6 {
+    type router
+    model host
+    network-config {
+	hostname n6
+	!
+	interface eth0
+	 ip address 10.0.1.10/24
+	 ipv6 address 2001:1::10/64
+	!
+    }
+    canvas c1
+    iconcoords {913.0 108.0}
+    labelcoords {913.0 140.0}
+    services {DefaultRoute HTTP SSH}
+    interface-peer {eth0 n5}
+}
+
+node n7 {
+    type router
+    model host
+    network-config {
+	hostname n7
+	!
+	interface eth0
+	 ip address 10.0.1.11/24
+	 ipv6 address 2001:1::11/64
+	!
+    }
+    canvas c1
+    iconcoords {906.0 294.0}
+    labelcoords {906.0 326.0}
+    services {DefaultRoute HTTP SSH}
+    interface-peer {eth0 n5}
+}
+
+node n8 {
+    type router
+    model host
+    network-config {
+	hostname n8
+	!
+	interface eth0
+	 ip address 10.0.1.12/24
+	 ipv6 address 2001:1::12/64
+	!
+    }
+    canvas c1
+    iconcoords {925.0 485.0}
+    labelcoords {925.0 517.0}
+    services {DefaultRoute HTTP SSH}
+    interface-peer {eth0 n5}
+}
+
+node n5 {
+    type lanswitch
+    network-config {
+	hostname n5
+	!
+    }
+    canvas c1
+    iconcoords {718.0 293.0}
+    labelcoords {718.0 317.0}
+    interface-peer {e0 n4}
+    interface-peer {e1 n6}
+    interface-peer {e2 n7}
+    interface-peer {e3 n8}
+}
+
+link l1 {
+    nodes {n1 n3}
+    bandwidth 0
+}
+
+link l2 {
+    nodes {n2 n3}
+    bandwidth 0
+}
+
+link l3 {
+    nodes {n3 n4}
+    bandwidth 0
+}
+
+link l4 {
+    nodes {n4 n5}
+    bandwidth 0
+}
+
+link l5 {
+    nodes {n5 n6}
+    bandwidth 0
+}
+
+link l6 {
+    nodes {n5 n7}
+    bandwidth 0
+}
+
+link l7 {
+    nodes {n5 n8}
+    bandwidth 0
+}
+
+canvas c1 {
+    name {Canvas1}
+}
+
+option global {
+    interface_names no
+    ip_addresses yes
+    ipv6_addresses yes
+    node_labels yes
+    link_labels yes
+    show_api no
+    background_images no
+    annotations yes
+    grid yes
+    traffic_start 0
+}
+
+option session {
+}
+
