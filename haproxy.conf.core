@@ -1,0 +1,17 @@
+global
+	debug	# uncomment to enable debug mode for HAProxy
+
+defaults
+	#log /dev/log local0	# enable log on syslog (doesn't work under chroot)
+	log localhost:514 local0	# enable log on syslog (to work under chroot)
+	mode http		# enable http mode which gives of layer 7 filtering
+	timeout connect 5000ms	# max time to wait for a connection attempt to a server to succeed
+	timeout client 50000ms	# max inactivity time on the client side
+	timeout server 50000ms	# max inactivity time on the server side
+
+frontend http
+	bind 10.0.0.10:80
+	default_backend apache_80
+
+backend apache_80
+	server apache2 10.0.1.10:80	# add a server to this backend
