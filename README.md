@@ -1,1 +1,15 @@
 # core-haproxy-20192
+
+This enviroment was create in order to run haproxy under Core emulator:
+Ubuntu 18.04.3 LTS
+Core Emulator 5.3.1 https://github.com/coreemu/core/tree/release-5.3.1
+Python 2.7.15+
+HAProxy 1.9.10
+
+README.md	    	This file!
+haproxy-1.9.10		haproxy binary.
+haproxy.conf		haproxy config example for testing.
+haproxy.conf.core	haproxy config example for use in Core enviroment.
+haproxy.sh		    Bash script to call haproxy with options.
+haproxy01.imn		Core scenario file for haproxy enviroment.
+run.sh	        	Bash script to run ab (apache benchmark) against haproxy running inside Core.
