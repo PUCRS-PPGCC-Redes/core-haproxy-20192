@@ -1,6 +1,6 @@
 # core-haproxy-20192
 
-# This enviroment was create in order to run HAProxy under Core emulator
+# This are the nedeed modules to run a HAProxy TCP/HTTP Load Balancer under a Core emulator.
 
 ## Tested enviroment:
 
