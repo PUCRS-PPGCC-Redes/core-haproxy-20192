@@ -14,22 +14,22 @@
 
 ## File list
 
-* haproxy01.imn		Core scenario file for haproxy enviroment.
+* **haproxy01.imn**	Core scenario file for haproxy enviroment.
 
-* haproxy-1.9.10	haproxy binary.
+* **haproxy-1.9.10** haproxy binary.
 
-* haproxy.conf		haproxy config example for testing.
+* **haproxy.conf** haproxy config example for testing.
 
-* haproxy.conf.core	haproxy config example for use in Core enviroment.
+* **haproxy.conf.core** haproxy config example for use in Core enviroment.
 
-* haproxy.py		Core python module for haproxy.
+* **haproxy.py** Core python module to call haproxy.
 
-* haproxy.sh		Bash script to call haproxy with options.
+* **haproxy.sh** Bash script to call haproxy with options.
 
-* __init__.py		Init python module for Core users' modules.
+* **__init__.py** Init python module for Core users' modules.
 
-* README.md	    	This file!
+* **README.md** This file!
 
-* rsyslogd.py		Core python module to call rsyslogd.
+* **rsyslogd.py** Core python module to call rsyslogd.
 
-* run.sh	        Bash script to run ab (apache benchmark) against haproxy running inside Core.
+* **run.sh** Bash script to run ab (apache benchmark) against haproxy running inside Core.
