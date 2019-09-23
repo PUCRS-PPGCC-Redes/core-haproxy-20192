@@ -1,16 +1,16 @@
 # core-haproxy-20192
 
-# This are the nedeed modules to run a HAProxy TCP/HTTP Load Balancer under a Core emulator.
+# These are the nedeed modules to run a HAProxy TCP/HTTP Load Balancer under the Core emulator.
 
 ## Tested enviroment:
 
-* Ubuntu 18.04.3 LTS
+* **Core Emulator 5.3.1** <https://github.com/coreemu/core/tree/release-5.3.1>
 
-* Core Emulator 5.3.1 <https://github.com/coreemu/core/tree/release-5.3.1>
+* **Python 2.7.15+**
 
-* Python 2.7.15+
+* **HAProxy 1.9.10**      <http://www.haproxy.org/download/1.9/src/haproxy-1.9.10.tar.gz>
 
-* HAProxy 1.9.10      <http://www.haproxy.org/download/1.9/src/haproxy-1.9.10.tar.gz>
+* **Ubuntu 18.04.3 LTS**
 
 ## File list
 
