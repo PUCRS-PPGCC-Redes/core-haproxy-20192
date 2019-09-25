@@ -14,7 +14,9 @@
 
 ## File list
 
-* **haproxy01.imn**	Core scenario file for haproxy enviroment.
+* **myservices** Core phyton modules to implement haproxy and syslog services.
+
+* **README.md** This file!
 
 * **haproxy-1.9.10** haproxy binary.
 
@@ -22,14 +24,8 @@
 
 * **haproxy.conf.core** haproxy config example for use in Core enviroment.
 
-* **haproxy.py** Core python module to call haproxy.
-
 * **haproxy.sh** Bash script to call haproxy with options.
 
-* **__init__.py** Init python module to call Core users' modules (haproxy.py and rsyslogd.py).
-
-* **README.md** This file!
-
-* **rsyslogd.py** Core python module to call rsyslogd.
+* **haproxy01.imn**	Core scenario file for haproxy enviroment.
 
 * **run.sh** Bash script to run ab (apache benchmark) against haproxy running inside Core.
