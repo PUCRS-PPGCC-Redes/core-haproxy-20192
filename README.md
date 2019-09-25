@@ -14,7 +14,7 @@
 
 ## File list
 
-* **myservices** Core phyton modules to implement haproxy and syslog services.
+* **myservices** Folder, Core phyton modules to implement haproxy and syslog services.
 
 * **README.md** This file!
 
