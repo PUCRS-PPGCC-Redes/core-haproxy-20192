@@ -16,6 +16,8 @@
 
 * **myservices** Folder, Core phyton modules to implement haproxy and syslog services.
 
+* **Marcius Dias - Core and HAProxy.pdf** PDF presentation about load balancers.
+
 * **README.md** This file!
 
 * **haproxy-1.9.10** haproxy binary.
