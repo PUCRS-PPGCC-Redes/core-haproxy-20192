@@ -16,7 +16,9 @@
 
 * **myservices** Folder, Core phyton modules to implement haproxy and syslog services.
 
-* **Marcius Dias - Core and HAProxy.pdf** PDF presentation about load balancers.
+* **HAProxy_demo.mp4** Demo video running HAProxy inside Core emulator.
+
+* **Marcius Dias - Core and HAProxy.pdf** - PDF presentation about load balancers.
 
 * **README.md** This file!
 
@@ -30,4 +32,6 @@
 
 * **haproxy01.imn**	Core scenario file for haproxy enviroment.
 
-* **run.sh** Bash script to run ab (apache benchmark) against haproxy running inside Core.
+* **run-n1.sh** Bash script to run ab (apache benchmark) inside n1 Core node, against haproxy (n4).
+
+* **run-n2.sh** Bash script to run ab (apache benchmark) inside n2 Core node, against haproxy (n4).
