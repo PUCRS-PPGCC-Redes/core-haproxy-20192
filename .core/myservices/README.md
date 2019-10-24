@@ -8,4 +8,3 @@
 
 * **rsyslogd.py** Syslog service.
 
-* **sample.py** Sample Core script for customized services.
