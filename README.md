@@ -14,7 +14,7 @@
 
 ## File list
 
-* **myservices** Folder, Core phyton modules to implement haproxy and syslog services.
+* **.core** ~/.core folder containing core personal configuration files.
 
 * **HAProxy_demo.mp4** Demo video running HAProxy inside Core emulator.
 
@@ -24,13 +24,17 @@
 
 * **haproxy-1.9.10** haproxy binary.
 
-* **haproxy.conf** haproxy config example for testing.
+* **haproxy.conf** haproxy config example for testing (outside core enviroment).
 
 * **haproxy.conf.core** haproxy config example for use in Core enviroment.
 
 * **haproxy.sh** Bash script to call haproxy with options.
 
 * **haproxy01.imn**	Core scenario file for haproxy enviroment.
+
+* **haproxy31x28.gif** Small Gif for haproxy node type /usr/share/core/icons/tiny/haproxy31x28.gif
+
+* **haproxy45x42.gif** Normal gif for haproxy node type /usr/share/core/icons/normal/haproxy45x42.gif
 
 * **run-n1.sh** Bash script to run ab (apache benchmark) inside n1 Core node, against haproxy (n4).
 
