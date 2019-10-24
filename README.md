@@ -32,8 +32,6 @@
 
 * **haproxy.sh** Bash script to call haproxy with options.
 
-* **haproxy01.imn**	Core scenario file for haproxy enviroment.
-
 * **haproxy31x28.gif** Small Gif for haproxy node type /usr/share/core/icons/tiny/haproxy31x28.gif
 
 * **haproxy45x42.gif** Normal gif for haproxy node type /usr/share/core/icons/normal/haproxy45x42.gif
