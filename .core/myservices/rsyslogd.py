@@ -40,7 +40,7 @@ class rSyslogd(CoreService):
     validation_mode = ServiceMode.NON_BLOCKING
     startup = ("rsyslogd",)
     shutdown = ()
-    validate = ("pidof haproxy",)
+    validate = ("pidof rsyslogd",)
     
     @classmethod
     def on_load(cls):
@@ -66,7 +66,7 @@ class rSyslogd(CoreService):
     @classmethod
     def generate_config(cls, node, filename):
         #
-        # Generate haproxy script start/stop and config files.
+        # Generate script start/stop and config files.
         #
         return ""
 
