@@ -24,7 +24,7 @@
 
 * **core5.3.1_install.sh** Shell script to install core 5.3.1 using Python 2.x.
 
-* **haproxy-1.9.10** haproxy binary.
+* **haproxy-1.9.10** haproxy binary /usr/local/bin/haproxy
 
 * **haproxy.conf** haproxy config example for testing (outside core enviroment).
 
