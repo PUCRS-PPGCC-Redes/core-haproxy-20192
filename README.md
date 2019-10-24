@@ -22,6 +22,8 @@
 
 * **README.md** This file!
 
+* **core5.3.1_install.sh** Shell script to install core 5.3.1 using Python 2.x.
+
 * **haproxy-1.9.10** haproxy binary.
 
 * **haproxy.conf** haproxy config example for testing (outside core enviroment).
