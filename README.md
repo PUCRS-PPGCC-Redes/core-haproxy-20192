@@ -39,3 +39,13 @@
 * **run-n1.sh** Bash script to run ab (apache benchmark) inside n1 Core node, against haproxy (n4).
 
 * **run-n2.sh** Bash script to run ab (apache benchmark) inside n2 Core node, against haproxy (n4).
+
+## Final instructions
+
+* Edit file /etc/core/core.conf
+
+* Uncomment the line "#custom_services_dir = /home/username/.core/myservices"
+
+* Replace with your own myservices dir path, should be something like /home/myhomedir/.core/myservices
+
+* Run this command -> # sudo service core-daemon restart
