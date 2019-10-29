@@ -40,7 +40,7 @@
 
 * **run-n2.sh** Bash script to run ab (apache benchmark) inside n2 Core node, against haproxy (n4).
 
-## Final instructions
+## Configuration instructions
 
 * Edit file /etc/core/core.conf
 
